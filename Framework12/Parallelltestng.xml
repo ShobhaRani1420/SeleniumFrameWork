@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <test thread-count="3" parallel="tests" name="Test1">
+    <classes>
+      <class name="Sample.DemoPrgTest"/>
+          <class name="Organization.CreateOrganizationTest"/>
+       </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test2">
+  <classes>
+      <class name="Organization.CreateOrganizationTest"/>
+            <class name="Sample.DemoPrgTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test3">
+  <classes>
+       <class name="Sample.DemoPrgTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  </suite> <!-- Suite -->
